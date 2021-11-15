@@ -75,12 +75,12 @@
               </div>
 
               <div class="col-sm-6 my-3">
-                <h2>Selamat Datang Di <br/>WebVote DUGAM Teachers Award 2021!</h2>
+                <h2>Selamat Datang Di <br/>WebVote DUGAM Teacher AwardS 2021!</h2>
                 <p class="py-2">Untuk Kalian Sobat DUGAM, Pilih Guru Terfavorit-mu Sesuai Dengan Kategori Sekarang! Kawal Hingga Jadi Juara #DTA2021</p>
 
                 <div class="row mt-3">
                   <div class="col-sm-6">
-                    <input type="text" name="nama" id="thisInput" placeholder="Nama - Kelas (ex: Admin - XI RPL 2)" class="form-control custom-form border-0 bg-light mb-2 py-4 sabar" required/>
+                    <input type="text" name="nama" id="thisInput" placeholder="Nama - Kelas (ex: Admin - XI RPL 2)" class="form-control custom-form border-0 bg-light mb-2 py-4" required/>
                   </div>
                   <div class="col-sm-4">
                     <a class="btn btn-primary mb-2 w-100 custom-button" onclick="showSlide('#ganteng')">Vote Sekarang!</a>
@@ -871,7 +871,11 @@
                 <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#best')">Kembali</a>
               </div>
               <div class="col-sm-3">
-                <input type="submit" name="submit" class="btn btn-primary my-2 w-100 custom-button" value="KIRIM"/>
+                <button class="btn btn-primary my-2 py-2 w-100 custom-button d-none" type="button" id="loading-btn" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+                <input type="submit" name="submit" class="btn btn-primary my-2 py-2 w-100 custom-button" id="submit-btn" value="KIRIM"/>
               </div>
             </div>
           </div>

@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/simplebar.css">
+    <title>DTA | SMKN 2 JAKARTA</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/logo.png" width="40px"/>
+            <div class="mobile-false">Dugam Teacher Awards</div>
+        </a>
+        <div class="d-flex">
+          <div class="mobile-false mx-3 pt-2" id="thisName"></div>
+          <a class="bi bi-person-circle p-0 text-dark" style="font-size: 30px;"></a>
+        </div>
+      </div>
+    </nav>
+    <form name="dta-form">
+      <div class="container pt-5">
+        <ul class="nav nav-tabs d-none" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ganteng-tab" data-bs-toggle="tab" data-bs-target="#ganteng" type="button" role="tab" aria-controls="ganteng" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="cantik-tab" data-bs-toggle="tab" data-bs-target="#cantik" type="button" role="tab" aria-controls="cantik" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="favorit-tab" data-bs-toggle="tab" data-bs-target="#favorit" type="button" role="tab" aria-controls="favorit" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="humble-tab" data-bs-toggle="tab" data-bs-target="#humble" type="button" role="tab" aria-controls="humble" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="asik-tab" data-bs-toggle="tab" data-bs-target="#asik" type="button" role="tab" aria-controls="asik" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="gmeet-tab" data-bs-toggle="tab" data-bs-target="#gmeet" type="button" role="tab" aria-controls="gmeet" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sibuk-tab" data-bs-toggle="tab" data-bs-target="#sibuk" type="button" role="tab" aria-controls="sibuk" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="lucu-tab" data-bs-toggle="tab" data-bs-target="#lucu" type="button" role="tab" aria-controls="lucu" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tegas-tab" data-bs-toggle="tab" data-bs-target="#tegas" type="button" role="tab" aria-controls="tegas" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="youtube-tab" data-bs-toggle="tab" data-bs-target="#youtube" type="button" role="tab" aria-controls="youtube" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="best-tab" data-bs-toggle="tab" data-bs-target="#best" type="button" role="tab" aria-controls="best" aria-selected="false"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="kalem-tab" data-bs-toggle="tab" data-bs-target="#kalem" type="button" role="tab" aria-controls="kalem" aria-selected="false"></button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row my-5">
+              <div class="col-sm-6 text-center desktop-false my-3">
+                <img src="./assets/img/undraw.svg" class="w-75">
+              </div>
+
+              <div class="col-sm-6 my-3">
+                <h2>Selamat Datang Di <br/>WebVote DUGAM Teachers Award 2021!</h2>
+                <p class="py-2">Untuk Kalian Sobat DUGAM, Pilih Guru Terfavorit-mu Sesuai Dengan Kategori Sekarang! Kawal Hingga Jadi Juara #DTA2021</p>
+
+                <div class="row mt-3">
+                  <div class="col-sm-6">
+                    <input type="text" name="nama" id="thisInput" placeholder="Nama - Kelas (ex: Admin - XI RPL 2)" class="form-control custom-form border-0 bg-light mb-2 py-4" required/>
+                  </div>
+                  <div class="col-sm-4">
+                    <a class="btn btn-primary mb-2 w-100 custom-button" onclick="showSlide('#ganteng')">Vote Sekarang!</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 my-2 text-center mobile-false">
+                <img src="./assets/img/undraw.svg" class="w-75">
+              </div>
+            </div>
+          </div>
+          <!-- END HOME -->
+
+          <!-- GANTENG -->
+          <div class="tab-pane fade" id="ganteng" role="tabpanel" aria-labelledby="ganteng-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terganteng
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Hendra Afriansyah, A.Md</div>
+                    <img src="./assets/img/guru/hendra.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="ganteng" value="Hendra Afriansyah, A.Md" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Ali Nurdhin Danisman, S.Pd</div>
+                    <img src="./assets/img/guru/ali.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="ganteng" value="Ali Nurdhin Danisman, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Alzaro Rashad Prakas, S.Tr</div>
+                    <img src="./assets/img/guru/alzaro.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="ganteng" value="Alzaro Rashad Prakas, S.Tr" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Yunus Faizal</div>
+                    <img src="./assets/img/guru/faisal.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="ganteng" value="Yunus Faizal" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Frans Hanip Akbar, SE</div>
+                    <img src="./assets/img/guru/frans.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="ganteng" value="Frans Hanip Akbar, SE" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_ganteng"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#home')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#cantik')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cantik -->
+          <div class="tab-pane fade" id="cantik" role="tabpanel" aria-labelledby="cantik-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Tercantik
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Khasanatul Atiyah, S.Ag</div>
+                    <img src="./assets/img/guru/atiyah.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="cantik" value="Khasanatul Atiyah, S.Ag" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Diani Dwi Putri Mardiyah, S.Kom</div>
+                    <img src="./assets/img/guru/diani.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="cantik" value="Diani Dwi Putri Mardiyah, S.Kom" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Risky Kurnia Dewi, S.Ds</div>
+                    <img src="./assets/img/guru/deris.jpeg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="cantik" value="Risky Kurnia Dewi, S.Ds" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Regina Arzica Pranata, S.Pd</div>
+                    <img src="./assets/img/guru/regina.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="cantik" value="Regina Arzica Pranata, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Euis Mufida, SE</div>
+                    <img src="./assets/img/guru/euis.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="cantik" value="Euis Mufida, SE" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_cantik"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#ganteng')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#favorit')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Favorit -->
+          <div class="tab-pane fade" id="favorit" role="tabpanel" aria-labelledby="favorit-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terfavorit
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">M. Sayhrir, S.Pd</div>
+                    <img src="./assets/img/guru/syahrir.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="favorit" value="M. Sayhrir, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Sukarti</div>
+                    <img src="./assets/img/guru/sukarti.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="favorit" value="Dra. Sukarti" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Bambang Hermawan</div>
+                    <img src="./assets/img/guru/bambang.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="favorit" value="Bambang Hermawan" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Mellyza Rahmi, S.Psi</div>
+                    <img src="./assets/img/guru/melly.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="favorit" value="Mellyza Rahmi, S.Psi" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Erna Mustika Rini, S.Sos</div>
+                    <img src="./assets/img/guru/erna.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="favorit" value="Erna Mustika Rini, S.Sos" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_favorit"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#cantik')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#humble')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HUMBLE -->
+          <div class="tab-pane fade" id="humble" role="tabpanel" aria-labelledby="humble-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terhumble
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Nila Dewanti, S.Pd</div>
+                    <img src="./assets/img/guru/nila.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Nila Dewanti, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Putri Pujiastuti, S.Pd</div>
+                    <img src="./assets/img/guru/putri.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Putri Pujiastuti, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Ahmad Fuadi, S.Pd</div>
+                    <img src="./assets/img/guru/fuad.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Ahmad Fuadi, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Sabar Hariman, ST</div>
+                    <img src="./assets/img/guru/sabar.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Sabar Hariman, ST" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Sukastriyo, M.Kom</div>
+                    <img src="./assets/img/guru/Sukast.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Sukastriyo, M.Kom" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Munir Rachmat</div>
+                    <img src="./assets/img/undraw.svg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Munir Rachmat" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Maksudi Fredy Sonata</div>
+                    <img src="./assets/img/guru/maksudi.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="humble" value="Maksudi Fredy Sonata" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_humble"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#favorit')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#asik')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASIK -->
+          <div class="tab-pane fade" id="asik" role="tabpanel" aria-labelledby="asik-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terasik
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Nuri Trisniati</div>
+                    <img src="./assets/img/guru/nuri.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Dra. Nuri Trisniati" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Afandi Muhajirin, S.Pdi</div>
+                    <img src="./assets/img/guru/afandi.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value=">Afandi Muhajirin, S.Pdi" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Yeti Suhayati</div>
+                    <img src="./assets/img/guru/yeti.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Dra. Yeti Suhayati" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Mardianus Efendy, S.Kom</div>
+                    <img src="./assets/img/undraw.svg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Mardianus Efendy, S.Kom" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Laurensius Tri Andy, S, Ikom</div>
+                    <img src="./assets/img/guru/lauren.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Laurensius Tri Andy, S, Ikom" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Rio Widyatmoko, Amd, Kom</div>
+                    <img src="./assets/img/guru/rio.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Rio Widyatmoko, Amd, Kom" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Solikhin, S.Pd</div>
+                    <img src="./assets/img/guru/solikhin.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="asik" value="Solikhin, S.Pd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_asik"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#humble')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#gmeet')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- GMEET -->
+          <div class="tab-pane fade" id="gmeet" role="tabpanel" aria-labelledby="gmeet-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Tergmeet
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Masyitoh</div>
+                    <img src="./assets/img/guru/masyitoh (2).jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="gmeet" value="Dra. Masyitoh" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Hayyu Hayfizah</div>
+                    <img src="./assets/img/undraw.svg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="gmeet" value="Hayyu Hayfizah" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Rosmiati, SH</div>
+                    <img src="./assets/img/guru/rosmiati.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="gmeet" value="Rosmiati, SH" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_gmeet"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#asik')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#sibuk')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIBUK -->
+          <div class="tab-pane fade" id="sibuk" role="tabpanel" aria-labelledby="sibuk-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Tersibuk
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Murni Astuti, MM</div>
+                    <img src="./assets/img/guru/murni astuti.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Dra. Murni Astuti, MM" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dina Siswanto S,pd</div>
+                    <img src="./assets/img/guru/dina.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Dina Siswanto S,pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra, Sri Murni SS, MSc</div>
+                    <img src="./assets/img/guru/sri murni.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Dra, Sri Murni SS, MSc" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Meffrina Yusniar, S.Pd, MM</div>
+                    <img src="./assets/img/guru/mefrina.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Meffrina Yusniar, S.Pd, MM" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Drs. Suhendra, MT</div>
+                    <img src="./assets/img/guru/suhendra.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Drs. Suhendra, MT" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Siti Bastiyah, M.Pd</div>
+                    <img src="./assets/img/guru/bastiyah.png">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="sibuk" value="Siti Bastiyah, M.Pd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_sibuk"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#gmeet')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#lucu')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- LUCU -->
+          <div class="tab-pane fade" id="lucu" role="tabpanel" aria-labelledby="lucu-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terlucu
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Denny Marpaung, S.Pd</div>
+                    <img src="./assets/img/guru/denny.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="lucu" value="Denny Marpaung, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Galuh Desy Rahmawati, SE</div>
+                    <img src="./assets/img/guru/galuh.jpeg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="lucu" value="Galuh Desy Rahmawati, SE" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_lucu"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#sibuk')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#tegas')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TEGAS -->
+          <div class="tab-pane fade" id="tegas" role="tabpanel" aria-labelledby="tegas-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Tertegas
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Drs. Rustadi</div>
+                    <img src="./assets/img/guru/rustadi.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Drs. Rustadi" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Eni Rohmani, Msi</div>
+                    <img src="./assets/img/guru/eni.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Dra. Eni Rohmani, Msi" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Didah Dinarsih, M,Pd</div>
+                    <img src="./assets/img/guru/didah.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Didah Dinarsih, M,Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Dra. Linda Lesertina. D</div>
+                    <img src="./assets/img/guru/linda.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Dra. Linda Lesertina. D" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Nur Umami</div>
+                    <img src="./assets/img/guru/nurma.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Nur Umami" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Drs. Kadirah, M.M. Pd</div>
+                    <img src="./assets/img/guru/kadirah.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="tegas" value="Drs. Kadirah, M.M. Pd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_tegas"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#lucu')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#youtube')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- YOUTUBE -->
+          <div class="tab-pane fade" id="youtube" role="tabpanel" aria-labelledby="youtube-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Teryoutube
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Try Pria Septiadi</div>
+                    <img src="./assets/img/guru/pria.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="youtube" value="Try Pria Septiadi" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Adhie Ferdian Hargobono, S.Pd</div>
+                    <img src="./assets/img/guru/adhie.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="youtube" value="Adhie Ferdian Hargobono, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Suheri, S.Pd</div>
+                    <img src="./assets/img/guru/suheri.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="youtube" value="Suheri, S.Pd" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_youtube"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#tegas')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#best')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- BEST -->
+          <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  The Best Of The Best
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Murni Astuti, MM</div>
+                    <img src="./assets/img/guru/murni astuti.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="best" value="Murni Astuti, MM" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_best"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#youtube')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <a class="btn btn-primary my-2 w-100 custom-button" onclick="showSlide('#kalem')">Selanjutnya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- KALEM -->
+          <div class="tab-pane fade" id="kalem" role="tabpanel" aria-labelledby="kalem-tab">
+            <div class="row">
+              <!-- COL -->
+              <div class="col-sm-9">
+                <h4>
+                  <span class="bi bi-trophy-fill me-2"></span>
+                  Guru Terkalem
+                </h4>
+
+                <div class="mt-4 category-content" data-simplebar>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Abdul Halik, S.Pd</div>
+                    <img src="./assets/img/guru/halik.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="kalem" value="Abdul Halik, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Sapto Prasetyo, S.M</div>
+                    <img src="./assets/img/guru/sapto.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="kalem" value="Sapto Prasetyo, S.M" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Rofik Aryanto</div>
+                    <img src="./assets/img/guru/rofik.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="kalem" value="Rofik Aryanto" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Suharjo, S.Pd</div>
+                    <img src="./assets/img/guru/suharjo.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="kalem" value="Suharjo, S.Pd" />
+                    </div>
+                  </div>
+                  <div class="category-item text-center">
+                    <div class="teacher-name">Sudarman, A.Md</div>
+                    <img src="./assets/img/guru/sudarman.jpg">
+                    <div class="text-center">
+                      <input type="radio" class="form-check-input" name="kalem" value="Sudarman, A.Md" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END COL -->
+
+              <!-- COL -->
+              <div class="col-sm-3 pt-5">
+                <h5>Alasan Memilih</h5>
+                <textarea class="mt-3 w-100 bg-light rounded-3 border-0 p-2" placeholder="Masukan Alasan-mu" style="height: 75%;" name="a_kalem"></textarea>
+              </div>
+              <!-- END COL -->
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-sm-3">
+                <a class="btn btn-secondary mt-2 w-100 custom-button" onclick="showSlide('#best')">Kembali</a>
+              </div>
+              <div class="col-sm-3">
+                <input type="submit" name="submit" class="btn btn-primary my-2 w-100 custom-button" value="KIRIM"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/simplebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
